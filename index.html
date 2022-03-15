@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="lolo">
+        <form>
+            <div class="form_name"><br>
+         <label  for="name" type="text"><strong></strong></label>
+         <input
+           type="text"
+           name="name"
+           id="your_name"
+           placeholder=" name"
+            >
+        </div>
+          <div class="form_email">
+            <label  for="email"  type="email"><strong></strong></label>
+            <input
+               type="email"
+               name="email"
+               id="your_email"
+               placeholder=" email"
+               >
+            </div>
+
+            <div class="pick">
+               <label  for="pick_date" type="text"><strong>pick a date</strong></label>
+               <input
+                 type="date"
+                 name="date1"
+                 id="pick_a_date"
+                 placeholder="date"
+                >
+
+                </div>
+
+                <div class="form_time">
+                    <label  for="pick_time" type="text">pick a time</label>
+                    <input
+                      type="time"
+                      name="myTime1"
+                      id="pick_a_time"
+                      placeholder="time "
+                       >
+                       <select name="myTime2">
+                         <option>AM</option>
+                         <option>PM</option>
+                       </select>
+                     </div>
+
+
+                     <div class="count"> <button id="decrement">-</button><b><span id="number">0</span> people</b><button id="increment">+</button>
+                     </div>
+
+
+                     <div class="error">
+                   
+                    </div>
+                    <div class="but">
+                        
+                      <button class="reserve" type="submit">MAKE RESERVATION</button>
+                    </div>
+                    
+         
+                        
+                     
+        </form>
+    </div>
+    
+</body>
+
+
+<script> 
+
+let sub = document.getElementById("decrement");
+let add = document.getElementById("increment");
+let result = document.getElementById("number");
+let integer = 1;
+
+
+sub.addEventListener('click', function(a){
+  a.preventDefault();
+  if(integer > 1){
+    integer -= 1;  result.innerText=integer;
+    return  integer(people);
+  }
+});
+
+add.addEventListener('click', function(b){
+  b.preventDefault();
+  integer += 1;
+  return integer(people);
+})
+
+
+
+
+
+  let yourname = document.getElementById("your_name");
+  let youremail = document.getElementById("your_email");
+  
+  let err_msg  = document.getElementsByClassName("error")[0];
+  let form = document.getElementById("form");
+
+  form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      console.log("hey",yourname,err_msg)
+      let err = [];
+      let yournameval=yourname.value;
+      if (yournameval ===""){
+          console.log('checking name');
+          err_msg.textContent= "please fill in your name";
+          return;
+      }
+      let youremailval=youremail.value;
+      if(youremailval ===""){
+          console.log("checking email")
+          console.log(youremail,err_msg)
+          err_msg.textContent= "please enter your email";
+          return;
+      }
+    
+      
+      if(err.length>0){
+          err_msg.innerText = err.join(",")
+          console.log(err.length+ "erooeeee");
+          
+      }
+      if(err.length>0){
+      err_msg=err[0];}
+  })
+</script>
+</html>

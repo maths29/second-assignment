@@ -1,0 +1,156 @@
+
+
+
+
+
+
+body {
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-family: 'Courier Prime', monospace;
+    font-weight: 500;
+  }
+  
+ 
+  #lolo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+  }
+  #lolo input{
+      height: 20px;
+      padding-top: 40px;
+      margin: auto;
+      margin-top: 30px;
+      width: 500px;
+      font-size: 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      border-top: none;
+      border-color: rgb(155, 150, 150);
+      border-left: none;
+      border-right: none;
+      border-bottom-width: 1px;
+  }
+  
+  form {
+    background: #f5f3f3;
+    color:black;
+    width: 50%;
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+    border-radius: 5px;
+    margin: 5%;
+  }
+  
+  
+ 
+ 
+ 
+
+ 
+  .form_name{
+    border: 0px;
+    margin-bottom: 10px;
+    color: black;
+    outline: none;
+    padding: 7px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-left: 30px;
+    width: 550px;
+    font-size: 20px;
+  }
+
+  .form_name input{
+    background-color: transparent;
+  }
+
+
+
+
+
+
+  .form_email{
+    border: 0px;
+    margin-bottom: 10px;
+    color: black;
+    outline: none;
+    padding: 7px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-left: 30px;
+    width: 550px;
+    font-size: 20px;
+  }
+
+  .form_email input{
+    background-color: transparent;
+  }
+
+  .pick{
+    border: 0px;
+    margin-bottom: 10px;
+    color: black;
+    outline: none;
+    padding: 7px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-left: 30px;
+    width: 550px;
+    font-size: 20px;
+    display: flex;
+  }
+
+  .pick input{
+    background-color: transparent;
+    display: flex;
+  }
+
+
+  .form_time{
+    border: 0px;
+    margin-bottom: 10px;
+    color: black;
+    outline: none;
+    padding: 7px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-left: 30px;
+    width: 550px;
+    font-size: 20px;
+}
+
+.form_time input{
+  background-color: transparent;
+}
+
+.error{
+  width: 350px;
+  height: 30px;
+  text-align: center;
+  background: white;
+  color:red;
+}
+
+.but {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+}
+.reserve{
+  height: 30px;
+  width: 100%;
+  background: #110d0d;
+  color: #f5eaea;
+  border-radius: 30px;
+}
